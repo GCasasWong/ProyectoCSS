@@ -8,29 +8,43 @@ header {
   background-color: #5d6fdf;
 }
 
-ul {
-  text-align: center;
-  margin-bottom: -40px;
-}
-
 h1 {
   text-align: center;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
 }
 
-.nav {
-  display: inline;
-}
-
 nav {
+  display: inline-block;
+  width: 80%;
+  position: relative;
   background-color: #c0c2e9;
   width: 100%;
 }
 
-img {
-  width: 60vw;
-  height: 30vh;
+nav ul {
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+nav div img {
+  width: 20%;
+  border: 3px solid red;
+  border-radius: 2%;
 }
 
 p {
@@ -56,8 +70,27 @@ footer {
 }
 
 .peliculas {
-  width: 50vw;
-  height: 50vh;
+  width: 20vw;
+  height: 40vh;
   border-radius: 5%;
   border: 3px solid red;
+}
+
+.grid img {
+  width: 100%;
+  height: 50%;
+}
+
+.grid ul {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-between;
+  align-items: start;
+  row-gap: 20px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
