@@ -11,19 +11,24 @@ h1 {
 }
 
 .saltar-contenido {
-  position: static;
-  text-decoration: none;
-  color: beige;
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
 }
 
-.saltar-contenido:hover {
+/* .saltar-contenido:hover {
   color: black;
   background-color: gold;
-}
+} */
 
 .saltar-contenido:focus {
-  color: #000;
-  background-color: white;
+  position: absolute;
+  top: 10px; /* Ajusta la posición donde quieras que aparezca */
+  left: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  z-index: 1000;
 }
 
 nav {
@@ -74,7 +79,6 @@ h2 {
 }
 
 div div:nth-child(2) {
-  
   border: 5px red dashed;
 }
 
